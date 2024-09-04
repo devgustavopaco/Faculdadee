@@ -22,7 +22,7 @@ public class Main {
             System.out.println("7. Sair");
             System.out.print("Escolha uma opção: ");
             opcao = scanner.nextInt();
-            scanner.nextLine(); // consumir a quebra de linha
+            scanner.nextLine(); 
 
             switch (opcao) {
                 case 1:
@@ -65,8 +65,7 @@ public class Main {
         alunos.add(aluno);
 
         System.out.println("Aluno matriculado com sucesso!");
-
-        // Opcional: associar aluno a uma disciplina
+        
         System.out.print("Deseja associar o aluno a uma disciplina? (s/n): ");
         if (scanner.nextLine().equalsIgnoreCase("s")) {
             listarDisciplinas();
